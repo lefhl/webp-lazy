@@ -295,6 +295,5 @@ h2.text-center {
 }
 
 .card_bg {
-    background-image: url('./../images/google.png');
-    background-image: -webkit-image-set('./../images/google.webp');
+    background-image: url($imagesPath+'/google.png');
 }
