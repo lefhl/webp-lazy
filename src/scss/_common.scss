@@ -293,3 +293,8 @@ h2.text-center {
     margin: rem-calc(40) auto;
     outline: rem-calc(5) dashed #000;
 }
+
+.card_bg {
+    background-image: url('./../images/google.png');
+    background-image: -webkit-image-set('./../images/google.webp');
+}
