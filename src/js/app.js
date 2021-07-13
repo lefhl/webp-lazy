@@ -15,9 +15,14 @@ import "../scss/style.scss";
   "use strict";
   $(function () {
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
-      $("[data-src], [src][data-ie]").each(function () {
+      $("[data-src]").each(function () {
         const $img = $(this);
         $img.attr("data-src", $img.attr("data-ie"));
+      });
+
+      $("[data-lazy][data-ie]").each(function () {
+        const $img = $(this);
+        $img.attr("data-lazy", $img.attr("data-ie"));
       });
     }
 
