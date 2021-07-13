@@ -14,6 +14,11 @@ import "../scss/style.scss";
 (function ($) {
   "use strict";
   $(function () {
+
+    if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
+      console.log('this is IE browser');
+    }
+
     lozad(".lozad", {
       rootMargin: "40px 0px",
       loaded: function (el) {
