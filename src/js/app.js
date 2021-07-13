@@ -16,7 +16,10 @@ import "../scss/style.scss";
   $(function () {
 
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
-      console.log('this is IE browser');
+      $("[data-src]").each(function () {
+        const $img = $(this)
+        $img.data("src", $img.data("ie"))
+      });
     }
 
     lozad(".lozad", {
