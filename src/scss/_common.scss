@@ -284,3 +284,12 @@ h2.text-center {
         text-align: center;
     }
 }
+
+.card {
+    width: rem-calc(200);
+    height: rem-calc(200);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: rem-calc(40) auto;
+    outline: rem-calc(5) dashed #000;
+}
