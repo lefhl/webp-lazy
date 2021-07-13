@@ -18,29 +18,22 @@ import "../scss/style.scss";
       $("[data-src], [data-background-image]").each(function () {
         const $img = $(this);
         if ($img.attr("data-src")) {
-          $img.attr("data-src", $img.attr("data-ie"));
+          if ($img.closest(".slick-slider")) {
+            $img.attr("src", $img.attr("data-ie"));
+          } else {
+            $img.attr("data-src", $img.attr("data-ie"));
+          }
         } else {
           $img.attr("data-background-image", $img.attr("data-ie"));
         }
       });
-
-      // $(document).on(
-      //   "init",
-      //   ".js-slider",
-      //   function (event, slick, currentSlide, nextSlide) {
-      //     $(this)
-      //       .find("[data-lazy][data-ie]")
-      //       .each(function () {
-      //         const $img = $(this);
-      //         $img.attr("data-lazy", $img.attr("data-ie"));
-      //       });
-      //   }
-      // );
-
-      // $("[data-lazy][data-ie]").each(function () {
-      //   const $img = $(this);
-      //   $img.attr("data-lazy", $img.attr("data-ie"));
-      // });
+    } else {
+      $(".slick-slider")
+        .find("[data-src]")
+        .each(function () {
+          const $img = $(this);
+          $img.attr("src", $img.attr("data-src"));
+        });
     }
 
     lozad(".lozad", {
