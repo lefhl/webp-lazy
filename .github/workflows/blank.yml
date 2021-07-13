@@ -16,7 +16,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm minify
+          npm run minify
       # Runs a set of commands using the runners shell
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
