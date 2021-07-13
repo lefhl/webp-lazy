@@ -20,6 +20,18 @@ import "../scss/style.scss";
         $img.attr("data-src", $img.attr("data-ie"));
       });
 
+      $(document).on(
+        "beforeChange",
+        ".js-slider",
+        function (event, slick, currentSlide, nextSlide) {
+          // var nextSlide = slick.$slides.get(nextSlide);
+          var $slideSoureSets = $(nextSlide).find("source");
+          $($slideSoureSets).each(function () {
+            $(this).attr("srcset", $(this).data("lazy"));
+          });
+        }
+      );
+
       $("[data-lazy][data-ie]").each(function () {
         const $img = $(this);
         $img.attr("data-lazy", $img.attr("data-ie"));
