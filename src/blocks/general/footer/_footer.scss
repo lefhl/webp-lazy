@@ -1,0 +1,92 @@
+.footer {
+  padding-top: rem-calc(48);
+  padding-bottom: rem-calc(24);
+  color: $white;
+  width: 100%;
+  left: rem-calc(0);
+  background: $quaternary;
+  position: relative;
+}
+
+.footer__head {
+  color: $white;
+  font-size: rem-calc(17);
+  display: block;
+  font-weight: 300;
+  margin-bottom: rem-calc(12);
+}
+
+.footer__shop {
+  color: $white;
+  display: block;
+  font-weight: 300;
+  margin-bottom: rem-calc(12);
+  line-height: 1.5;
+  font-size: rem-calc(17);
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-gray;
+  }
+}
+
+.footer__bottom {
+  font-size: rem-calc(13);
+  text-align: center;
+}
+
+.footer__soc {
+  margin-bottom: rem-calc(24);
+  font-size: rem-calc(26);
+  text-align: center;
+}
+
+.footer__link {
+  font-weight: $global-weight-bold;
+  display: block;
+  margin-bottom: rem-calc(7);
+  color: $tertiary;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer__pay {
+  height: rem-calc(24);
+}
+
+.footer__cetera {
+  margin-right: rem-calc(18);
+}
+
+.footer__labs {
+  margin-right: rem-calc(18);
+  color: $tertiary;
+  display: inline-block;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer__labs_right {
+  margin-right: rem-calc(0);
+}
+
+.footer__nav {
+  margin-bottom: rem-calc(12);
+}
+
+.footer__logo {
+  width: rem-calc(140);
+}
+
+.footer__block {
+  margin-bottom: rem-calc(24);
+}

@@ -1,0 +1,10 @@
+mixin itemsOnPage(itemName)
+  .grid-x.grid-padding-x.align-justify
+    .cell.shrink 1 #{itemName}
+    .cell.shrink
+      button.button.dropdown.hollow(type='button' data-toggle='itemsOnPage-dropdown') по 10
+      .dropdown-pane(id='itemsOnPage-dropdown' data-dropdown data-auto-focus='true')
+        ul.menu.vertical
+          li.active: a(href='') по 10
+          li: a(href='') по 20
+          li: a(href='') по 50

@@ -1,0 +1,41 @@
+.prod {
+  align-items: flex-start;
+}
+
+.prod__info {
+  margin-bottom: rem-calc(24);
+}
+
+.prod__favor {
+  color: $dark-gray;
+  margin-right: rem-calc(10);
+}
+
+.prod__price {
+  font-size: rem-calc(15);
+  font-weight: $global-weight-bold;
+  margin-right: rem-calc(4);
+}
+
+.prod__old {
+  font-size: rem-calc(13);
+  color: $dark-gray;
+}
+
+.prod__cat {
+  display: block;
+  font-size: rem-calc(13);
+  color: $dark-gray;
+}
+
+.prod__rub {
+  margin-bottom: rem-calc(12);
+}
+
+.prod__main {
+  padding-bottom: rem-calc(10);
+}
+
+.prod__img {
+  margin-bottom: rem-calc(24);
+}

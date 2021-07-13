@@ -1,0 +1,23 @@
+.side__block {
+  padding: rem-calc(21);
+  border-radius: $global-radius;
+  background: $main-color;
+  margin-bottom: rem-calc(24);
+}
+
+.side__city {
+  font-weight: $global-weight-bold;
+  margin-left: rem-calc(4);
+  margin-right: rem-calc(4);
+}
+
+.side__place {
+  font-size: rem-calc(15);
+  margin-bottom: rem-calc(24);
+}
+
+.side__date {
+  font-size: rem-calc(21);
+  margin-bottom: rem-calc(12);
+  color: $secondary-color;
+}

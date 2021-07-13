@@ -1,0 +1,20 @@
+.label_success {
+  color: $white;
+  background: $success-color;
+}
+
+.label_secondary {
+  color: $white;
+  background: $secondary-color;
+}
+
+.label_warning {
+  color: $black;
+  background: $warning-color;
+}
+
+.label_action {
+  margin-right: rem-calc(4);
+  color: $white;
+  background: $secondary-color;
+}

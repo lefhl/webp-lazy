@@ -1,0 +1,143 @@
+.cat {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+  font-weight: $global-weight-bold;
+}
+
+.cat_top {
+  margin-top: rem-calc(5);
+}
+
+.cat__link {
+  @include disable-mouse-outline;
+
+  display: block;
+  color: $secondary-color;
+  position: relative;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+
+  &::after {
+    content: " ";
+    display: block;
+    border-bottom: rem-calc(2) solid $warning-color;
+    width: 0;
+    position: absolute;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+}
+
+.cat__item {
+  padding-right: rem-calc(30);
+
+  @include disable-mouse-outline;
+
+  position: relative;
+}
+
+.cat__item:last-child {
+  padding-right: rem-calc(0);
+}
+
+.cat__item .cat {
+  text-transform: none;
+  font-weight: 400;
+  display: none;
+  position: absolute;
+  margin: rem-calc(-3 0 0) -1rem;
+  padding: 0.5rem 0;
+  top: 100%;
+  left: 0;
+  width: 13rem;
+  background: scale-color($main-color, $lightness: 50%);
+  border-bottom: rem-calc(2) solid $warning-color;
+}
+
+.cat__item .cat .cat {
+  left: 100%;
+  top: 0;
+}
+
+.cat__item .cat__item {
+  padding: 0;
+  width: 100%;
+}
+
+.cat__item .cat__item .cat__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: $secondary-color;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    background: scale-color($main-color, $lightness: -5%);
+  }
+}
+
+.cat__item:hover > .cat {
+  display: block;
+}
+
+.cat__item:hover > .cat__link::after {
+  width: 100%;
+}
+
+.cat__item .cat .cat__item:hover > .cat {
+  display: block;
+}
+
+@include breakpoint(large down) {
+  .cat_top {
+    margin-top: rem-calc(0);
+  }
+
+  .cat__item {
+    padding-right: rem-calc(15);
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(5);
+  }
+
+  .cat__item .cat .cat__item:hover > .cat {
+    display: none;
+  }
+}
+
+@include breakpoint(medium down) {
+  .cat {
+    justify-content: center;
+    margin-top: rem-calc(21);
+  }
+
+  .cat_top {
+    margin-top: rem-calc(0);
+  }
+
+  .cat__item:hover > .cat {
+    display: none;
+  }
+
+  .cat__item:hover > .cat__link::after {
+    width: 0;
+  }
+}
+
+@include breakpoint(small only) {
+  .cat__item {
+    width: 100%;
+  }
+}

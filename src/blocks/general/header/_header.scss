@@ -1,0 +1,103 @@
+.header {
+  background: $main-color;
+  padding: rem-calc(35 0);
+}
+
+.header__age {
+  font-size: rem-calc(21);
+  font-weight: $global-weight-bold;
+  padding-top: rem-calc(10);
+  margin-left: rem-calc(10);
+  display: inline-block;
+  margin-bottom: rem-calc(20);
+}
+
+.header__alert {
+  color: $alert-color;
+  margin-right: rem-calc(4);
+}
+
+.header__success {
+  color: $success-color;
+}
+
+.header__reg {
+  margin-right: rem-calc(12);
+  font-size: rem-calc(21);
+}
+
+.header__hamb {
+  display: none;
+  font-size: rem-calc(28);
+  align-self: center;
+  text-align: center;
+  color: $primary-color;
+}
+
+.header__info {
+  align-self: center;
+  text-align: left;
+}
+
+.header__span {
+  color: $secondary-color;
+  margin-left: rem-calc(4);
+  font-size: rem-calc(14);
+  margin-right: rem-calc(4);
+}
+
+.header__block {
+  text-align: right;
+  align-self: center;
+}
+
+.header__tel {
+  color: $medium-gray;
+  font-size: rem-calc(28);
+  font-weight: $global-weight-bold;
+}
+
+.header__tel_wish {
+  position: relative;
+}
+
+.header__logo {
+  max-width: rem-calc(210);
+}
+
+@include breakpoint(large down) {
+  .header__block {
+    text-align: center;
+  }
+}
+
+@include breakpoint(medium down) {
+  .header__info {
+    margin-bottom: rem-calc(10);
+    text-align: center;
+  }
+}
+
+@include breakpoint(small only) {
+  .header__span {
+    display: none;
+  }
+
+  .header__info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__age {
+    padding-top: rem-calc(0);
+    font-size: rem-calc(16);
+  }
+
+  .header__logo_mini {
+    width: rem-calc(150);
+  }
+
+  .header__hamb {
+    display: block;
+  }
+}

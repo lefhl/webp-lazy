@@ -1,0 +1,124 @@
+.callout {
+  margin-bottom: rem-calc(24);
+  padding: 6 * $global-padding;
+}
+
+.callout_st {
+  width: 100%;
+}
+
+.callout_alert {
+  background-color: #f7e4e1;
+}
+
+.callout_dd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.callout_success {
+  background-color: #d7f7f6;
+}
+
+.callout_light-gray {
+  background-color: $light-gray;
+  background-size: cover;
+  background-position: center;
+}
+
+.callout__unit {
+  color: $light-gray;
+  display: inline-block;
+  margin-right: rem-calc(8);
+}
+
+.callout__tag {
+  display: inline-block;
+  color: $dark-gray;
+  margin-right: rem-calc(8);
+}
+
+.callout__link {
+  display: inline-block;
+  margin-right: rem-calc(8);
+}
+
+.callout__rss {
+  font-size: rem-calc(24);
+  display: block;
+  margin-bottom: rem-calc(20);
+}
+
+.callout__donate {
+  color: $medium-gray;
+}
+
+.callout__see {
+  margin-left: rem-calc(4);
+  color: $dark-gray;
+}
+
+.callout__date {
+  margin-bottom: rem-calc(21);
+  color: $success-color;
+}
+
+.callout__bill {
+  margin-bottom: rem-calc(21);
+  width: 100%;
+  height: rem-calc(154);
+  font-weight: $global-weight-bold;
+  background: $dark-gray;
+}
+
+.callout__report {
+  margin-bottom: rem-calc(20);
+  width: 100%;
+  height: rem-calc(140);
+  background: $dark-gray;
+}
+
+.callout__label {
+  margin-bottom: rem-calc(10);
+}
+
+.callout__dark {
+  color: $dark-gray;
+}
+
+.callout__include {
+  font-style: italic;
+  font-size: rem-calc(11);
+}
+
+.callout__quest {
+  color: $dark-gray;
+  margin-left: rem-calc(4);
+}
+
+.callout__sum {
+  font-size: rem-calc(21);
+}
+
+.callout__watch {
+  display: inline-block;
+  margin-right: rem-calc(4);
+}
+
+.callout__info {
+  margin-bottom: rem-calc(20);
+}
+
+.callout__icon {
+  max-height: rem-calc(20);
+}
+
+.callout__strong {
+  font-weight: $global-weight-bold;
+}
+
+.callout__block {
+  display: block;
+}

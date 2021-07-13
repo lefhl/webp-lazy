@@ -1,0 +1,9 @@
+.badge_secondary {
+  background: $secondary-color;
+}
+
+.badge_tel {
+  position: absolute;
+  left: rem-calc(18);
+  top: rem-calc(-4);
+}

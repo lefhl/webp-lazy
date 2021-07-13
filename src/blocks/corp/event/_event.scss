@@ -1,0 +1,24 @@
+.event {
+  margin-bottom: rem-calc(21);
+  background: $white;
+}
+
+.event__date {
+  font-weight: $global-weight-bold;
+  margin-bottom: rem-calc(4);
+}
+
+.event__place {
+  color: $tertiary;
+  font-weight: $global-weight-bold;
+}
+
+.event__block {
+  padding: rem-calc(21);
+  border-radius: $global-radius;
+  background: $white;
+}
+
+.event__block_main {
+  background: $main-color;
+}

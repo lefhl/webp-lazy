@@ -1,0 +1,19 @@
+.services {
+  padding: rem-calc(42 21 21);
+  text-align: center;
+  background: $main-color;
+  border-radius: $global-radius;
+  margin-bottom: rem-calc(40);
+}
+
+.services__title {
+  margin-bottom: rem-calc(10);
+}
+
+.services__img {
+  max-width: rem-calc(98);
+}
+
+.services__block {
+  margin-bottom: rem-calc(21);
+}

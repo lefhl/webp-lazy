@@ -1,0 +1,52 @@
+
+.shipment__tell {
+  margin-right: rem-calc(8);
+  font-size: rem-calc(14);
+}
+
+.shipment__soc {
+  font-size: rem-calc(28);
+  margin-bottom: rem-calc(24);
+}
+
+.shipment__art {
+  color: $dark-gray;
+}
+
+.shipment__no {
+  color: $medium-gray;
+  margin-left: rem-calc(4);
+}
+
+.shipment__num {
+  color: $success-color;
+  margin-left: rem-calc(4);
+}
+
+.shipment__low {
+  color: $alert-color;
+  margin-left: rem-calc(4);
+}
+
+.shipment__mark {
+  font-style: italic;
+  color: $dark-gray;
+}
+
+.shipment__old {
+  color: $dark-gray;
+  display: block;
+  text-decoration: line-through;
+}
+
+.shipment__compare {
+  margin-right: rem-calc(8);
+}
+
+.shipment__text {
+  color: $dark-gray;
+}
+
+.shipment__price {
+  font-size: rem-calc(35);
+}

@@ -1,0 +1,81 @@
+$foundation-palette: (
+  primary: #b22222,
+  secondary: #634f8e,
+  tertiary: scale-color(#47616e, $lightness: 50%),
+  quaternary: #48626f,
+  success: scale-color(#27bab5, $lightness: -15%),
+  warning: #eeb301,
+  alert: #cc4b37,
+  main: #fafafa,
+  sky: #f2f2f2,
+  light-gray: #e6e6e6,
+  medium-gray: #cacaca,
+  dark-gray: #8a8a8a,
+  black: #444,
+  white: #fff,
+  fb: #3f619c,
+  vk: #3e709c,
+  twi: #2fa4cc,
+  ok: #fc6719,
+);
+$main-color: map-get($foundation-palette, main);
+$secondary-color: map-get($foundation-palette, secondary);
+$light-gray: map-get($foundation-palette, light-gray);
+$medium-gray: map-get($foundation-palette, medium-gray);
+$dark-gray: map-get($foundation-palette, dark-gray);
+$black: map-get($foundation-palette, black);
+$white: map-get($foundation-palette, white);
+$sky: map-get($foundation-palette, sky);
+$tertiary: map-get($foundation-palette, tertiary);
+$quaternary: map-get($foundation-palette, quaternary);
+$fb: map-get($foundation-palette, fb);
+$vk: map-get($foundation-palette, vk);
+$twi: map-get($foundation-palette, twi);
+$ok: map-get($foundation-palette, ok);
+
+@include add-foundation-colors;
+
+$global-lineheight: 1.5;
+$global-font-size: 16px;
+$global-width: rem-calc(1200);
+
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family: arial, sans-serif;
+$body-antialiased: true;
+$global-margin: 0.25rem;
+$global-padding: 0.25rem;
+$global-weight-normal: normal;
+$global-weight-bold: 700;
+$global-radius: rem-calc(4);
+$global-input-height: rem-calc(34);
+$global-text-direction: ltr;
+$global-flexbox: true;
+$global-prototype-breakpoints: false;
+$global-button-cursor: auto;
+$global-color-pick-contrast-tolerance: 0;
+$print-transparent-backgrounds: true;
+
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 960px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+  xxxlarge: 1920px,
+  giant: 2560px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large xlarge);
+
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 24;
+$grid-margin-gutters: (
+  small: rem-calc(20),
+  medium: rem-calc(20),
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;

@@ -1,0 +1,58 @@
+.input-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-items: stretch;
+}
+
+.input-group-field {
+  margin: rem-calc(0);
+  border-radius: 0;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.input-group > :first-child,
+.input-group > :first-child.input-group-button > *,
+.input-group > :last-child,
+.input-group > :last-child.input-group-button > * {
+  border-radius: rem-calc(0);
+}
+
+.input-group-label {
+  padding: 0 1rem;
+  border: rem-calc(1) solid $medium-gray;
+  background: $light-gray;
+  color: #0a0a0a;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  flex: 0 0 auto;
+  margin: rem-calc(0);
+  align-items: center;
+}
+
+.input-group-label:first-child {
+  border-right: rem-calc(0);
+}
+
+.input-group-button {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex: 0 0 auto;
+  margin: rem-calc(0);
+}
+
+.input-group-button a {
+  margin: rem-calc(0);
+  padding-top: rem-calc(7);
+}
+
+.input-group-button button,
+.input-group-button input,
+.input-group-button label {
+  white-space: nowrap;
+  margin: rem-calc(0);
+}

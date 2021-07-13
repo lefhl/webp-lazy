@@ -1,0 +1,36 @@
+.project {
+  margin-bottom: rem-calc(32);
+}
+
+.project__img {
+  margin-bottom: rem-calc(24);
+}
+
+.project__title {
+  margin-bottom: rem-calc(12);
+  font-size: rem-calc(18);
+}
+
+.project__views {
+  color: $dark-gray;
+  margin-left: rem-calc(8);
+  margin-right: rem-calc(16);
+}
+
+.project__icon {
+  color: $dark-gray;
+}
+
+.project__info {
+  padding-bottom: rem-calc(20);
+}
+
+.project__text {
+  margin-bottom: rem-calc(12);
+}
+
+.project__cat {
+  display: block;
+  color: $dark-gray;
+  margin-bottom: rem-calc(12);
+}

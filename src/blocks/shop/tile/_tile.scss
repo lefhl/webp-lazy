@@ -1,0 +1,33 @@
+.tile {
+  margin-bottom: rem-calc(10);
+}
+
+.tile__title {
+  margin-bottom: rem-calc(10);
+  display: block;
+}
+
+.tile__no {
+  color: $dark-gray;
+}
+
+.tile__price {
+  margin-bottom: rem-calc(10);
+  font-weight: $global-weight-bold;
+}
+
+.tile__link {
+  display: block;
+  margin-bottom: rem-calc(21);
+}
+
+.tile__img {
+  height: rem-calc(80);
+}
+
+.tile__clear {
+  color: $dark-gray;
+  white-space: nowrap;
+  display: block;
+  margin-bottom: rem-calc(21);
+}

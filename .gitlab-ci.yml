@@ -1,0 +1,29 @@
+include:
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/before_script.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/stages.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/.build_assets.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/.build_composer.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/.deploy_assets_to_staging.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/.deploy_code_to_server.yml'
+  - 'https://gitlab.cetera.ru/boilerplate/ci/raw/master/.deploy_composer_files_to_server.yml'
+
+build_assets:
+  extends: .build_assets
+  script:
+    - npm install && npm run lint-prod && npm run minify #Disable audit due to https://pm.cetera.ru/browse/CE-28940
+  only:
+    changes:
+      - "**/*"
+  artifacts:
+    paths:
+    - "dist"
+
+
+deploy_assets_to_staging:
+  extends: .deploy_assets_to_staging
+  script:
+    - rsync -e ssh /dev/null root@vps10.cetera.ru::wireframe/$CI_PROJECT_NAME/
+    - rsync -avz --delete --ignore-times --numeric-ids --chown=33:33 -e ssh $CI_PROJECT_DIR/dist/ vps10.cetera.ru::wireframe/$CI_PROJECT_NAME/
+  only:
+    changes:
+      - "**/*"

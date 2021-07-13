@@ -1,0 +1,18 @@
+.car {
+  position: relative;
+  margin: 0 0 1rem;
+  padding: rem-calc(21);
+  border: rem-calc(1) solid rgba(68, 68, 68, 0.25);
+  border-radius: rem-calc(4);
+  background-color: $white;
+}
+
+.car__anchor {
+  margin-bottom: rem-calc(21);
+  display: block;
+}
+
+.car__date {
+  color: $medium-gray;
+  margin-right: rem-calc(4);
+}

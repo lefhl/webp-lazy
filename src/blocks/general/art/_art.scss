@@ -1,0 +1,17 @@
+.art {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin-left: rem-calc(0);
+}
+
+.art__item_active {
+  padding: rem-calc(10 14);
+  font-weight: 700;
+}
+
+.art__link {
+  display: block;
+  text-decoration: none;
+  padding: rem-calc(10 14);
+}

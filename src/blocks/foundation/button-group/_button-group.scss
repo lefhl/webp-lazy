@@ -1,0 +1,11 @@
+.button-group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.button-group .button {
+  margin: 0 rem-calc(1) rem-calc(1) 0;
+  flex: 0 0 auto;
+}

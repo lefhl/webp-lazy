@@ -1,0 +1,31 @@
+.partners {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: flex;
+}
+
+.partners .partners {
+  margin-left: rem-calc(20);
+}
+
+.partners__link {
+  display: block;
+  padding: rem-calc(10 14);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.partners__link_active {
+  background: $primary-color;
+  color: $white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}

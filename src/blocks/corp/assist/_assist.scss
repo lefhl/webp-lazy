@@ -1,0 +1,9 @@
+.assist__block {
+  margin-bottom: rem-calc(12);
+}
+
+@include breakpoint(medium down) {
+  .assist {
+    margin-bottom: rem-calc(32);
+  }
+}

@@ -1,0 +1,18 @@
+.promo {
+  background: $primary-color;
+  padding-top: rem-calc(70);
+  color: $white;
+  padding-bottom: rem-calc(70);
+  margin-bottom: rem-calc(40);
+}
+
+.promo__img {
+  width: 100%;
+}
+
+@include breakpoint(small only) {
+  .promo {
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(20);
+  }
+}

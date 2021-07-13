@@ -1,0 +1,21 @@
+.share {
+  margin-bottom: rem-calc(24);
+  font-size: rem-calc(28);
+}
+
+.share__text {
+  color: $tertiary;
+  font-size: rem-calc(14);
+  margin-right: rem-calc(8);
+}
+
+.share__enter {
+  font-size: rem-calc(14);
+  margin-right: rem-calc(8);
+}
+
+@include breakpoint(medium down) {
+  .share__text {
+    display: none;
+  }
+}

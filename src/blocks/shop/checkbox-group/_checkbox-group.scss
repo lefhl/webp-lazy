@@ -1,0 +1,30 @@
+.checkbox-group {
+  font-size: 0;
+  margin-bottom: rem-calc(7);
+}
+
+.checkbox-group__label {
+  font-size: $global-font-size;
+  padding: 0.83rem;
+  margin: 0;
+  min-width: 3rem;
+  background: $white;
+  min-height: rem-calc(39);
+  line-height: 1;
+  display: inline-block;
+  border: rem-calc(1) solid $black;
+  border-right-width: 0;
+  text-align: center;
+}
+
+.checkbox-group__label:last-child {
+  border-right-width: rem-calc(1);
+}
+
+.checkbox-group__item {
+  display: none;
+}
+
+.checkbox-group__item:checked + .checkbox-group__label {
+  box-shadow: inset rem-calc(0 0 5 2) rgba(1, 1, 1, 0.4);
+}

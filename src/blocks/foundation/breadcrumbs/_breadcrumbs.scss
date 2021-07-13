@@ -1,0 +1,9 @@
+.breadcrumbs {
+  margin-top: rem-calc(32);
+  margin-bottom: rem-calc(32);
+}
+
+.breadcrumbs a {
+  color: $secondary-color;
+  font-size: rem-calc(12);
+}

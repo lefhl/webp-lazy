@@ -1,0 +1,7 @@
+.accordion-title {
+  font-weight: $global-weight-bold;
+}
+
+.accordion-item:last-child > a {
+  border: rem-calc(1) solid $light-gray;
+}

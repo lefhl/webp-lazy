@@ -1,0 +1,6 @@
+mixin breadcrumbs(navlinks=['Главная','Раздел','Путь до страницы','Страница'])
+  .grid-container
+    ul.breadcrumbs
+      each key, index in Object.keys(navlinks)
+        li
+          a(href='#' title='')= navlinks[key]

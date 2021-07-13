@@ -1,0 +1,17 @@
+.user {
+  margin-bottom: rem-calc(24);
+}
+
+.user__img {
+  background: #bbb;
+  width: rem-calc(45);
+}
+
+.user__title {
+  color: $quaternary;
+  font-weight: $global-weight-bold;
+}
+
+.user__date {
+  color: $dark-gray;
+}

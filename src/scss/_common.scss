@@ -1,0 +1,257 @@
+a {
+  transition: color 300ms ease-in-out;
+  color: scale-color($secondary-color, $lightness: 20%);
+  text-decoration-skip-ink: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: scale-color($secondary-color, $lightness: -30%);
+  }
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-decoration,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
+
+fieldset {
+  margin-bottom: rem-calc(20);
+}
+
+::-ms-clear {
+  display: none;
+}
+
+hr {
+  margin: rem-calc(0) auto rem-calc(24);
+  border-bottom: rem-calc(1) solid $light-gray;
+}
+
+label {
+  line-height: 1.5;
+}
+
+table {
+  margin-bottom: rem-calc(24);
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: rem-calc(4);
+}
+
+dl,
+ol,
+p,
+ul {
+  line-height: 1.5;
+  margin-bottom: rem-calc(24);
+}
+
+blockquote {
+  border-left: rem-calc(2) solid $primary-color;
+}
+
+blockquote,
+blockquote p {
+  padding: rem-calc(0 14);
+}
+
+tfoot,
+thead {
+  background: $sky;
+  border: rem-calc(1) solid $sky;
+}
+
+tfoot tr,
+thead tr {
+  background: transparent;
+}
+
+tfoot td,
+tfoot th,
+thead td,
+thead th {
+  font-weight: 700;
+  vertical-align: top;
+}
+
+tbody {
+  background: $white;
+  border: rem-calc(1) solid $sky;
+}
+
+tbody th {
+  font-weight: 700;
+  vertical-align: top;
+  padding: rem-calc(8 10);
+}
+
+tbody td {
+  vertical-align: top;
+  padding: rem-calc(8 10);
+}
+
+tbody tr:nth-child(even) {
+  background: $sky;
+  border-bottom: rem-calc(0);
+}
+
+input,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  border: rem-calc(1) solid #cacaca;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $black;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  appearance: none;
+  box-shadow: none;
+  line-height: normal;
+  height: $global-input-height;
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+select {
+  height: $global-input-height;
+  padding-top: rem-calc(0);
+  padding-bottom: rem-calc(0);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 300;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+.h1,
+h1 {
+  margin-bottom: rem-calc(32);
+  line-height: 1;
+  font-size: 3rem;
+}
+
+.h2,
+h2 {
+  line-height: 1.1;
+  font-size: 2.2rem;
+  margin-bottom: rem-calc(32);
+}
+
+.h3,
+h3 {
+  line-height: 1.2;
+  font-size: rem-calc(23);
+  margin-bottom: rem-calc(12);
+}
+
+.h4,
+h4 {
+  line-height: 1.3;
+  font-size: 1.5rem;
+  margin-bottom: rem-calc(12);
+}
+
+.h5,
+h5 {
+  line-height: 1.4;
+  font-size: 1.3rem;
+  margin-bottom: rem-calc(12);
+}
+
+.h6,
+h6 {
+  line-height: 1.5;
+  font-size: rem-calc(17);
+  margin-bottom: rem-calc(12);
+}
+
+h1,
+h2 {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: $warning-color;
+    height: rem-calc(3);
+    width: 5rem;
+    left: 0;
+    right: 0;
+    bottom: -0.5rem;
+  }
+}
+
+@mixin position-center() {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+h1.large-text-center,
+h1.medium-text-center,
+h1.text-center,
+h2.large-text-center,
+h2.medium-text-center,
+h2.text-center {
+  &::after {
+    @include position-center();
+  }
+}
+
+@include breakpoint(small only) {
+  .h1,
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .h2,
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .h3,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .h4,
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .h5,
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  .h6,
+  h6 {
+    font-size: 1.1rem;
+  }
+}
