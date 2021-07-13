@@ -255,3 +255,21 @@ h2.text-center {
     font-size: 1.1rem;
   }
 }
+
+.pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem-calc(40);
+}
+
+.lozad {
+    transition: all .3s ease-in;
+    transform: translateY(1.5rem);
+    opacity: .75;
+}
+
+.lozad.loaded {
+    transform: translateY(0);
+    opacity: 1;
+}

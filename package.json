@@ -11,6 +11,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "foundation-sites": "^6.6.3",
     "jquery": "^3.6.0",
+    "lozad": "^1.16.0",
     "motion-ui": "^2.0.3",
     "postcss": "^8.1.0",
     "slick-carousel": "^1.8.1",
