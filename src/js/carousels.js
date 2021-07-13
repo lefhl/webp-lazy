@@ -2,6 +2,13 @@ import "slick-carousel";
 (function ($) {
   "use strict";
   $(function () {
+    if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
+      $("[data-lazy][data-ie]").each(function () {
+        const $img = $(this);
+        $img.attr("data-lazy", $img.attr("data-ie"));
+      });
+    }
+
     $(".js-slider").slick({
       infinite: true,
       dots: false,
