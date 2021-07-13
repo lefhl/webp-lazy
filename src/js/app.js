@@ -21,21 +21,22 @@ import "../scss/style.scss";
       });
 
       $(document).on(
-        "beforeChange",
+        "init",
         ".js-slider",
         function (event, slick, currentSlide, nextSlide) {
-          // var nextSlide = slick.$slides.get(nextSlide);
-          var $slideSoureSets = $(nextSlide).find("source");
-          $($slideSoureSets).each(function () {
-            $(this).attr("srcset", $(this).data("lazy"));
-          });
+          $(this)
+            .find("[data-lazy][data-ie]")
+            .each(function () {
+              const $img = $(this);
+              $img.attr("data-lazy", $img.attr("data-ie"));
+            });
         }
       );
 
-      $("[data-lazy][data-ie]").each(function () {
-        const $img = $(this);
-        $img.attr("data-lazy", $img.attr("data-ie"));
-      });
+      // $("[data-lazy][data-ie]").each(function () {
+      //   const $img = $(this);
+      //   $img.attr("data-lazy", $img.attr("data-ie"));
+      // });
     }
 
     lozad(".lozad", {
