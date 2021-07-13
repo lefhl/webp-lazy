@@ -273,3 +273,10 @@ h2.text-center {
     transform: translateY(0);
     opacity: 1;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .pic {
+        display: block;
+        text-align: center;
+    }
+}

@@ -16,12 +16,8 @@ import "../scss/style.scss";
   $(function () {
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
       $("[data-src]").each(function () {
-        const $img = $(this)
-        $img.data("src", $img.data("ie"));
-        console.log("data-img", $img.data("src"));
-        console.log("data-ie", $img.data("ie"));
-
-        $img.attr('data-src', $img.attr('data-ie'))
+        const $img = $(this);
+        $img.attr("data-src", $img.attr("data-ie"));
       });
     }
 
@@ -31,6 +27,5 @@ import "../scss/style.scss";
         el.classList.add("loaded");
       },
     }).observe();
-
   });
 })(jQuery);
