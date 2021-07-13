@@ -25,6 +25,10 @@ fieldset {
   display: none;
 }
 
+body {
+    padding-bottom: 100px;
+}
+
 hr {
   margin: rem-calc(0) auto rem-calc(24);
   border-bottom: rem-calc(1) solid $light-gray;

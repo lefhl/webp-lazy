@@ -15,7 +15,7 @@ import "../scss/style.scss";
   "use strict";
   $(function () {
     if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
-      $("[data-src]").each(function () {
+      $("[data-src], [src][data-ie]").each(function () {
         const $img = $(this);
         $img.attr("data-src", $img.attr("data-ie"));
       });
